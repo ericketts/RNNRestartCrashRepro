@@ -1,4 +1,4 @@
-## RNNResetartCrashRepro
+# RNNResetartCrashRepro
 
 This repo is a minimal reproduction of the crash caused when using `wix/react-native-navigation` on Android with any lib that calls `ReactInstanceManager.recreateReactContextInBackground()` (which here is the `avishayil/react-native-restart` lib, but could just as easily be `Microsoft/react-native-code-push`).
 
@@ -6,9 +6,9 @@ I go into a bit of detail about why I believe this is happening at [this ticket 
 
 
 
-#### Repro
+## Repro
 
-##### Setup
+#### Setup
 To see the issue in action, clone this repo, `cd` into the project, use `yarn` to install the deps (I cannot guarentee using `npm` will work, since I override the `core-js` resolution using a `yarn` specific feature).
 
 
@@ -23,6 +23,6 @@ If you want, try the same steps above, but with `react-native run-ios`, and note
 
 
 
-#### Fix?
+## Fix?
 
 I have an idea for a fix, but need to investigate the potential ramifications further before I publish it (I'll likely put in a PR on the `react-native-navigation` repo, but as they're focused on V2, and this is (afaik) a V1 issue, I'm not sure whether it'll be merged ever...)
