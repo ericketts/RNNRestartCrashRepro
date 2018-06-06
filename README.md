@@ -1,6 +1,6 @@
 # RNNResetartCrashRepro
 
-This repo is a minimal reproduction of the crash caused when using `wix/react-native-navigation` on Android with any lib that calls `ReactInstanceManager.recreateReactContextInBackground()` (which here is the `avishayil/react-native-restart` lib, but could just as easily be `Microsoft/react-native-code-push`).
+This repo is a minimal reproduction of the crash caused when using wix/react-native-navigation on Android with any lib that calls `ReactInstanceManager.recreateReactContextInBackground()` (which here is the avishayil/react-native-restart lib, but could just as easily be Microsoft/react-native-code-push).
 
 I go into a bit of detail about why I believe this is happening at [this ticket comment](https://github.com/wix/react-native-navigation/issues/2331#issuecomment-395143392).
 
